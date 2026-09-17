@@ -1,0 +1,139 @@
+/* Logo */
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Website name and tagline */
+header {
+    background-color: #4b1725;
+    color: white;
+    text-align: center;
+    padding: 30px 20px 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: #f4d58d;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+header p {
+    margin: 10px 0 40px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #d8c3ad
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+nav a {
+    display: block;
+    color: #f4d58d;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #f4d58d;
+    color: #4b1725;
+    text-decoration: underline;
+}
+
+/* Stack the navigation on smaller screens */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+/* Hero */
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 40px 20px;
+    background-color: #f7f1e8;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-text h2 {
+    margin: 0 0 15px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #4b1725;
+}
+
+.hero-text p {
+    margin: 0;
+    line-height: 1.6;
+    color: #404040;
+}
+
+.hero-button {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 15px 20px;
+    background-color: #4b1725;
+    color: #f4d58d;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.hero-button:hover,
+.hero-button:focus-visible {
+    background-color: #f4d58d;
+    color: #4b1725;
+    text-decoration: underline;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+    .hero-image {
+        height: 250px;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+}
