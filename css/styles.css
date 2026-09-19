@@ -317,7 +317,7 @@ footer a:hover {
     gap: 25px;
 }
 
-/* Event Intro */
+/* Event Introduction */
 .event-introduction {
     background-color: #f7f1e8;
     color: #404040;
@@ -369,4 +369,144 @@ footer a:hover {
     .event-description h2 {
         font-size: 28px;
     }
+}
+
+/* Main content and sidebar */
+.event-details {
+    padding: 40px 20px;
+    background-color: #efe3d3;
+    color: #404040;
+    border-top: 1px solid #d8c3ad;
+}
+
+.event-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.event-main h2,
+.event-sidebar h2 {
+    margin: 0 0 20px;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #4b1725;
+}
+
+.event-main h3 {
+    margin: 25px 0 15px;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: #4b1725;
+}
+
+.event-main p,
+.event-sidebar p {
+    margin: 0 0 15px;
+    line-height: 1.6;
+}
+
+.event-main ul {
+    margin: 0 0 20px;
+    padding-left: 20px;
+}
+
+.event-main li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.event-sidebar {
+    padding: 25px;
+    background-color: #f7f1e8;
+    border: 1px solid #d8c3ad;
+    border-radius: 8px;
+}
+
+/* Registration button */
+.registration-button {
+    display: block;
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: #4b1725;
+    color: #f4d58d;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.registration-button:hover {
+    background-color: #f4d58d;
+    color: #4b1725;
+    text-decoration: underline;
+}
+
+/* Move sidebar below the main content */
+@media (max-width: 800px) {
+    .event-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Related events */
+.related-events {
+    padding: 40px 20px;
+    background-color: #f7f1e8;
+    color: #404040;
+    border-top: 1px solid #d8c3ad;
+}
+
+.related-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.related-content h2 {
+    margin: 0 0 25px;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #4b1725;
+}
+
+.related-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.related-card {
+    flex: 1 1 280px;
+    min-width: 0;
+    background-color: white;
+    border: 1px solid #d8c3ad;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.related-card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.related-info {
+    padding: 20px;
+}
+
+.related-info h3 {
+    margin: 0 0 15px;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    color: #4b1725;
+}
+
+.related-info p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
 }
