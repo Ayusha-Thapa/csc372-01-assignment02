@@ -95,3 +95,4 @@ I used Git commits to track the project as I completed each section:
 4. Added the event page’s main content, sidebar, and related events.
 5. Completed the event page.
 6. Completed the README.md.
+7. Added JavaScript event handling for saving and removing events, highlighting saved cards, and updating the saved events summary.
