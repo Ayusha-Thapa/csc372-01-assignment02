@@ -510,3 +510,66 @@ footer a:hover {
     font-size: 14px;
     line-height: 1.6;
 }
+
+/* Highlight saved events */
+.event-card.saved {
+    background-color: #fff5dc;
+    border-color: #4b1725;
+    box-shadow: 0 0 0 2px #4b1725;
+}
+
+/* Saved Events summary */
+.saved-events {
+    padding: 40px 20px;
+    background-color: #f7f1e8;
+    color: #404040;
+    border-top: 1px solid #d8c3ad;
+}
+
+.saved-events h2 {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #4b1725;
+}
+
+.saved-events p {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.saved-events ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.saved-events li {
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d8c3ad;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+/* Saved button */
+.save-button {
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: #4b1725;
+    color: #f4d58d;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #f4d58d;
+    color: #4b1725;
+}
